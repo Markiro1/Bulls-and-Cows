@@ -51,9 +51,10 @@ class Game {
         if (lengthSecretChar > 36) {
             System.out.println("Error: maximum number of possible symbols in the code is 36 (0-9, a-z).");
             System.exit(1);
-        } else if (lengthSecretChar < 1)
+        } else if (lengthSecretChar < 1) {
             System.out.println("Error: symbols range length cannot be less than 1");
-        System.exit(1);
+            System.exit(1);
+        }
         return lengthSecretChar;
     }
     //!метод для ввода интервала символов
